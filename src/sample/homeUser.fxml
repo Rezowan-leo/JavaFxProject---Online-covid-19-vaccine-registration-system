@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="590.0" prefWidth="765.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.homeUserController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="226.0" layoutY="365.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="775.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7764706015586853" green="0.7764706015586853" blue="0.7764706015586853" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="194.0" layoutY="173.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="775.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7764706015586853" green="0.7764706015586853" blue="0.7764706015586853" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="75.0" layoutY="98.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="775.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7764706015586853" green="0.7764706015586853" blue="0.7764706015586853" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button layoutX="573.0" layoutY="274.0" mnemonicParsing="false" text="Vaccine Availability" />
+      <Text layoutX="558.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vaccine availability near you" />
+      <Text layoutX="313.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Find out next due date " />
+      <Text layoutX="69.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat with a volunteer" />
+      <Text layoutX="83.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Donation" />
+      <Text layoutX="302.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Latest updates on Covid-19" />
+      <Text layoutX="558.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vaccination centres near me" />
+      <Button layoutX="95.0" layoutY="274.0" mnemonicParsing="false" text="Donate" />
+      <Button layoutX="325.0" layoutY="274.0" mnemonicParsing="false" text="Upcoming dose" />
+      <Button layoutX="105.0" layoutY="470.0" mnemonicParsing="false" text="Chat" />
+      <Button layoutX="345.0" layoutY="470.0" mnemonicParsing="false" text="Updates" />
+      <Button layoutX="573.0" layoutY="470.0" mnemonicParsing="false" text="Vaccination centres" />
+      <HBox layoutX="383.0" layoutY="125.0" prefHeight="25.0" prefWidth="362.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" text="History" />
+            <Button mnemonicParsing="false" text="Check Notifications" />
+            <Button fx:id="btn_homeUserUpdate" mnemonicParsing="false" onAction="#onClick_homeUserUpdate" text="Update profile" />
+            <Button fx:id="btn_homeUserSignOut" mnemonicParsing="false" onAction="#onClick_homeUserSignOut" text="Sign out" />
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="102.0" layoutY="-3.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="775.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7764706015586853" green="0.7764706015586853" blue="0.7764706015586853" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="102.0" fitWidth="95.0" layoutX="10.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@55.png" />
+         </image>
+      </ImageView>
+      <Line endX="-101.0" endY="72.0" layoutX="214.0" layoutY="27.0" opacity="0.63" startX="-101.0" startY="-29.0" stroke="#00000081" />
+      <Label layoutX="135.0" layoutY="34.0" text="Online Covid-19 Vaccine Registration System" textFill="#656565">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="123.0" text="Dashboard" textFill="#656565">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <Text layoutX="364.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="homeUser_Cong" layoutX="40.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="." />
+   </children>
+</AnchorPane>

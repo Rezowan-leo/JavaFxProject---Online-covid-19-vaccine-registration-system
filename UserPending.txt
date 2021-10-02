@@ -1,0 +1,19 @@
+First Name: asd
+Last Name: asf
+NID: 
+City Corporation: Dhaka North City Corporation
+Thana: West Uttara
+Vaccine Center: Dhaka Mohanagar General Hospital
+Present Address: 
+Permanent Address: 
+Postal Code: 
+Occupation: null
+Gender: null
+Date Of Birth: null
+Vaccine Status: null
+Medical Condition: 
+Phone: 
+Email: 
+Receive Updates: null
+Password: 12
+

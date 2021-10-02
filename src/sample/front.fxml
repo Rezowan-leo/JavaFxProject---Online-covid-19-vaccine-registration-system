@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="590.0" prefWidth="765.0" style="-fx-background-color: #ADD8E6;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.frontController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="364.0" layoutX="-4.0" layoutY="226.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="775.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7764706015586853" green="0.7764706015586853" blue="0.7764706015586853" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="102.0" layoutX="-4.0" layoutY="-1.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="775.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7764706015586853" green="0.7764706015586853" blue="0.7764706015586853" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="193.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0177111112" />
+      <Text layoutX="100.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="333" />
+      <Text layoutX="335.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16263" />
+      <Text layoutX="482.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="09666777222" />
+      <Text layoutX="649.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="999" />
+      <ImageView fitHeight="95.0" fitWidth="112.0" layoutX="18.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@11.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="95.0" layoutX="6.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@55.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="136.0" layoutY="35.0" text="Online Covid-19 Vaccine Registration System" textFill="#656565">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <HBox layoutX="69.0" layoutY="146.0" prefHeight="23.0" prefWidth="636.0" spacing="50.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Health Portal" wrappingWidth="84.8203125">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hotline" wrappingWidth="44.49609375">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="National Call Center" wrappingWidth="116.265625">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Covid-19 Telehealth" wrappingWidth="116.265625">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Emergency " wrappingWidth="71.8203125">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <Button fx:id="btn_frontSignUp" layoutX="701.0" layoutY="64.0" mnemonicParsing="false" onAction="#onClick_frontSignUp" text="Sign Up" />
+      <Line endX="-101.0" endY="72.0" layoutX="211.0" layoutY="28.0" opacity="0.63" startX="-101.0" startY="-29.0" stroke="#00000081" />
+      <Button fx:id="front_aboutUs" layoutX="246.0" layoutY="379.0" mnemonicParsing="false" onAction="#onClick_aboutUs" text="About Us" />
+      <Button fx:id="front_connectWithUs" layoutX="258.0" layoutY="419.0" mnemonicParsing="false" onAction="#onClick_connect" text="Connect With Us" />
+      <Button fx:id="front_Donate" layoutX="387.0" layoutY="338.0" mnemonicParsing="false" onAction="#onClick_donate" text="Donate" />
+      <Button fx:id="front_onlineRegis" layoutX="472.0" layoutY="264.0" mnemonicParsing="false" onAction="#onClick_onlineRegis" text="Online Registration Process" />
+      <Button fx:id="front_gallery" layoutX="300.0" layoutY="299.0" mnemonicParsing="false" onAction="#onClick_Gallery" text="Gallery" />
+      <Text layoutX="75.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Want to know about the online vaccine registration process? Click here!" />
+      <Text layoutX="74.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View the images of out volunteer work" />
+      <Text layoutX="75.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Help keep this free service running. Click here to donate!" />
+      <Text layoutX="74.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connect with us on social media" />
+      <Text layoutX="75.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click here to know about us!" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="128.0" layoutX="-4.0" layoutY="100.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="775.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7764706015586853" green="0.7764706015586853" blue="0.7764706015586853" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button fx:id="front_admin" layoutX="176.0" layoutY="458.0" mnemonicParsing="false" onAction="#onClick_frontAdmin" text="Admin Login" />
+      <Text layoutX="78.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login as Admin" />
+   </children>
+</AnchorPane>

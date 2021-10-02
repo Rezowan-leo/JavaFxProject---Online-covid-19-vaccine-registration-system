@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="590.0" prefWidth="765.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.customerLoginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="102.0" layoutX="-2.0" layoutY="-1.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="775.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7763158082962036" green="0.7763158082962036" blue="0.7763158082962036" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Label layoutX="130.0" layoutY="37.0" text="Online Covid-19 Vaccine Registration System" textFill="#656565">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <VBox layoutX="42.0" layoutY="155.0" prefHeight="296.0" prefWidth="116.0" spacing="18.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:*" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last name:*" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NID Number:*" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="City Corporation:*" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Municipality / Thana:*" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vaccine Center:*" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Present Address:*" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Permanent Address" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Postal Code:" />
+         </children>
+      </VBox>
+      <ComboBox fx:id="cxOccupation" layoutX="560.0" layoutY="155.0" prefHeight="25.0" prefWidth="176.0" promptText="Select your occupation" visibleRowCount="6" />
+      <Text layoutX="42.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
+      <Text layoutX="42.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password:" />
+      <VBox layoutX="188.0" layoutY="155.0" prefHeight="289.0" prefWidth="212.0" spacing="9.0">
+         <children>
+            <TextField fx:id="cxLogin_FirstName" prefHeight="25.0" prefWidth="193.0" />
+            <TextField fx:id="cxLogin_LastName" prefHeight="25.0" prefWidth="193.0" />
+            <TextField fx:id="cxLogin_NID" prefHeight="25.0" prefWidth="193.0" />
+            <ComboBox fx:id="cxLogin_comboCityCorp" onAction="#onClick_comboCityCorp" prefHeight="25.0" prefWidth="230.0" promptText="Select your City Corporation" />
+            <ComboBox fx:id="cxLogin_comboThana" onAction="#onClick_comboThana" prefHeight="25.0" prefWidth="236.0" promptText="Select your Municipility / Thana" />
+            <ComboBox fx:id="cxLogin_comboCenter" onAction="#onClick_comboCenter" prefHeight="25.0" prefWidth="230.0" promptText="Select desired Vaccine Center" />
+            <TextField fx:id="cxLogin_PresentAddress" prefHeight="25.0" prefWidth="193.0" />
+            <TextField fx:id="cxLogin_PermanentAddress" prefHeight="25.0" prefWidth="193.0" />
+            <TextField fx:id="cxLogin_PostalCode" prefHeight="25.0" prefWidth="193.0" />
+         </children>
+      </VBox>
+      <HBox layoutX="593.0" layoutY="283.0" prefHeight="36.0" prefWidth="105.0" spacing="20.0" />
+      <PasswordField fx:id="cxLogin_Password" layoutX="188.0" layoutY="486.0" prefHeight="25.0" prefWidth="212.0" />
+      <PasswordField fx:id="cxLogin_ConfirmPassword" layoutX="188.0" layoutY="522.0" prefHeight="25.0" prefWidth="212.0" />
+      <Text layoutX="442.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Receive latest updates via notifications?" wrappingWidth="132.0859375000001" />
+      <HBox layoutX="595.0" layoutY="486.0" prefHeight="25.0" prefWidth="105.0" spacing="20.0">
+         <children>
+            <CheckBox fx:id="cxLogin_yesUpdate" mnemonicParsing="false" text="Yes" />
+            <CheckBox fx:id="cxLogin_noUpdate" mnemonicParsing="false" text="No" />
+         </children>
+      </HBox>
+      <VBox layoutX="442.0" layoutY="154.0" prefHeight="205.0" prefWidth="105.0" spacing="22.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Occupation:*" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:*" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth:*" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vaccinated yet?" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Medical Condition:" />
+         </children>
+      </VBox>
+      <Button fx:id="btn_customerLoginSubmit" layoutX="684.0" layoutY="531.0" mnemonicParsing="false" onAction="#onClick_customerLoginSubmit" text="Submit" />
+      <HBox layoutX="557.0" layoutY="194.0" prefHeight="25.0" prefWidth="176.0">
+         <children>
+            <CheckBox fx:id="cxLoginPage_male" mnemonicParsing="false" prefHeight="17.0" prefWidth="60.0" text="Male" />
+            <CheckBox fx:id="cxLoginPage_female" mnemonicParsing="false" prefHeight="17.0" prefWidth="63.0" text="Female" />
+            <CheckBox fx:id="cxLoginPage_other" mnemonicParsing="false" text="Other" />
+         </children>
+      </HBox>
+      <TextArea fx:id="cxLogin_MedicalCondition" layoutX="560.0" layoutY="302.0" prefHeight="88.0" prefWidth="176.0" />
+      <HBox layoutX="560.0" layoutY="265.0" prefHeight="36.0" prefWidth="141.0" spacing="20.0">
+         <children>
+            <CheckBox fx:id="cxLoginPageVaxYes" mnemonicParsing="false" text="Yes" />
+            <CheckBox fx:id="cxLoginPageVaxNo" mnemonicParsing="false" text="No" />
+         </children>
+      </HBox>
+      <Button fx:id="btn_cxLoginHome" layoutX="712.0" layoutY="66.0" mnemonicParsing="false" onAction="#onClick_cusLogHome" text="Home" />
+      <Text fx:id="cxLogin_passWordNotMatch" layoutX="188.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="." />
+      <DatePicker fx:id="cxLogin_DateOfBirth" layoutX="561.0" layoutY="226.0" promptText="mm/dd/yyyy" />
+      <TextField fx:id="cxLogin_Email" layoutX="560.0" layoutY="430.0" prefHeight="25.0" prefWidth="176.0" />
+      <TextField fx:id="cxLogin_Phone" layoutX="560.0" layoutY="399.0" prefHeight="25.0" prefWidth="176.0" />
+      <Text layoutX="442.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:*" />
+      <Text layoutX="442.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone:*" />
+      <ImageView fitHeight="102.0" fitWidth="95.0" layoutX="7.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@55.png" />
+         </image>
+      </ImageView>
+      <Line endX="-101.0" endY="72.0" layoutX="210.0" layoutY="28.0" opacity="0.63" startX="-101.0" startY="-29.0" stroke="#00000081" />
+   </children>
+</AnchorPane>

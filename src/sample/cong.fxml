@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="193.0" prefWidth="597.0" style="-fx-background-color: #ADD8E6;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.congController">
+   <children>
+      <VBox layoutX="38.0" layoutY="51.0" prefHeight="91.0" prefWidth="522.0" spacing="20.0">
+         <children>
+            <Text fx:id="cong_t1" strokeType="OUTSIDE" strokeWidth="0.0" text="." />
+            <Text fx:id="cont_t2" strokeType="OUTSIDE" strokeWidth="0.0" text="." />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date: 23/10/2021, Saturday" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
